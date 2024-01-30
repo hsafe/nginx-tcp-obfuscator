@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.16.0-alpine
+    volumes:
+      - ./nginx2.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "1088:1088"
