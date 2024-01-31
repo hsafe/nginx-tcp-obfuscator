@@ -7,3 +7,4 @@ services:
       - ./nginx2.conf:/etc/nginx/nginx.conf:ro
     ports:
       - "1088:1088"
+    restart: on-failure
